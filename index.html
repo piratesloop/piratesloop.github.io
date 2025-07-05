@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Darkened — A Dark Fantasy RPG</title>
+
+  <!-- Google Fonts для заголовку -->
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
@@ -14,52 +18,74 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      height: 100vh;
       text-align: center;
+      min-height: 100vh;
       background-image: radial-gradient(circle at top, #1a1a1a 0%, #000000 100%);
     }
 
+    img.logo {
+      max-width: 220px;
+      margin-top: 50px;
+    }
+
     h1 {
-      font-size: 3em;
-      margin-bottom: 0.2em;
+      font-family: 'UnifrakturCook', cursive;
+      font-size: 3.2em;
+      margin: 0.4em 0 0.2em;
+      color: #f8f8f8;
     }
 
     p {
       font-size: 1.2em;
-      max-width: 600px;
-      margin-bottom: 2em;
+      max-width: 700px;
+      margin: 0 20px 2em;
       color: #ccc;
+      line-height: 1.6;
     }
 
     a.button {
       text-decoration: none;
       background-color: #7a2c2c;
       color: white;
-      padding: 12px 24px;
-      border-radius: 8px;
+      padding: 14px 28px;
       font-size: 1em;
-      transition: background-color 0.3s ease;
+      border-radius: 0; /* гострі краї */
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      border: 2px solid #a03e3e;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
     a.button:hover {
       background-color: #a03e3e;
+      transform: scale(1.05);
     }
 
     footer {
-      position: absolute;
-      bottom: 10px;
+      margin-top: auto;
+      padding: 20px;
       font-size: 0.8em;
       color: #555;
     }
   </style>
 </head>
 <body>
+
+  <!-- Логотип -->
+  <img class="logo" src="bda69679-5b65-4368-9e0b-255ce2d91112.png" alt="PirateSloop Logo" />
+
+  <!-- Заголовок -->
   <h1>Darkened</h1>
+
+  <!-- Опис -->
   <p>Enter a world of shadows, ancient curses, and forgotten gods.<br>
   A mobile dark fantasy RPG with turn-based combat and deep lore.</p>
+
+  <!-- Кнопка -->
   <a class="button" href="#">Trailer coming soon</a>
 
+  <!-- Footer -->
   <footer>&copy; 2025 piratesloop. All rights reserved.</footer>
+
 </body>
 </html>
