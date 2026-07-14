@@ -213,23 +213,39 @@
     .store-btn:hover{ transform:translateY(-1px); border-color:#3a3a3a; background:#151515; color:#fff; }
     .store-ico{ width:18px; height:18px; display:block; }
 
-    /* ---- About ---- */
-    .about{
-      display:grid; gap:16px;
-      grid-template-columns: 104px 1fr;
-      align-items:start;
-    }
-    .avatar{
-      width:104px; height:104px;
-      border:none; background:none; overflow:hidden;  /* border:1px solid #222; background:#0f0f0f; ----grey background and frame */
-    }
-    .about p{ color:var(--muted); margin:0; }
+/* ---- About ---- */
+.about{
+  display:grid;
+  grid-template-columns:120px 1fr;
+  gap:18px;
+  align-items:start;
+  padding:16px;
+}
 
-    /* Email paragraph (spacing + italic) */
-    .about p:last-of-type {
-      margin-top: 1em;
-      font-style: italic;
-    }
+.avatar{
+  width:120px;
+  height:120px;
+  border:1px solid var(--card-stroke);
+  background:#0f0f0f;
+  overflow:hidden;
+}
+
+.avatar img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.about p{
+  color:var(--muted);
+  margin:0;
+}
+
+/* Email paragraph (spacing + italic) */
+.about p:last-of-type {
+  margin-top: 1em;
+  font-style: italic;
+}
 
     /* ---- Support (coffee) ---- */
     .sr-only{
