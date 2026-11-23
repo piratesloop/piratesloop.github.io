@@ -1,1 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Request deletion of your Dregfall account and associated data from Pirate Sloop.">
+  <link rel="canonical" href="https://piratesloop.com/dregfall/delete-account/">
+  <title>Delete your Dregfall account | Pirate Sloop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #000;
+      --fg: #f5f5f5;
+      --muted: #cfcfcf;
+      --maxw: 640px;
+      --pad-x: clamp(16px, 4vw, 32px);
+      --section-pad: clamp(48px, 7vw, 96px);
+      --topbar-h: 56px;
+    }
 
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding-top: var(--topbar-h);
+      background: var(--bg);
+      color: var(--fg);
+      font-family: 'Fira Sans', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    .topbar {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: var(--topbar-h);
+      padding-inline: var(--pad-x);
+      background: var(--bg);
+    }
+
+    .topbar a {
+      display: inline-block;
+      padding: 8px 10px;
+      color: #ddd;
+      letter-spacing: .02em;
+      text-decoration: none;
+    }
+
+    .topbar a:hover { color: #fff; background: #111; }
+
+    main { padding: var(--section-pad) var(--pad-x) 0; }
+    section { max-width: var(--maxw); margin-inline: auto; }
+    section + section { margin-top: var(--section-pad); }
+
+    h1, h2 {
+      margin: 0 0 22px;
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    p, ol { margin: 0; color: var(--muted); }
+    ol + p, p + p, li + li { margin-top: 10px; }
+    ol { padding-inline-start: 1.5em; }
+    .email { overflow-wrap: anywhere; }
+    a:focus-visible { outline: 2px solid var(--fg); outline-offset: 3px; }
+
+    footer {
+      padding: 20px var(--pad-x) 40px;
+      color: #8a8a8a;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <nav aria-label="Primary">
+      <a href="https://piratesloop.com/">Main</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1>Delete your Dregfall account</h1>
+      <ol>
+        <li>In Dregfall, go to <strong>Settings → Account deletion → Copy deletion code</strong>.</li>
+        <li>Email your latest code to - <i class="email">piratesloop4@gmail.com</i></li>
+      </ol>
+      <p>Already uninstalled or lost the code? Email us so we can check whether we can verify your account.</p>
+    </section>
+
+    <section>
+      <h2>What we delete</h2>
+      <p>After verifying your request, we delete your Firebase sign-in and your profile, characters, Arena rating and match history from the live game database. Other players’ results may remain with your details removed. We’ll email you when deletion is complete.</p>
+      <p>OVHcloud’s standard backup is kept for 24 hours. Manual backups, a hashed profile reference and the deletion record have no automatic expiry. Support emails stay until manually deleted.</p>
+    </section>
+  </main>
+  <footer>© Pirate Sloop</footer>
+</body>
+</html>
